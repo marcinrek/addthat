@@ -1,0 +1,126 @@
+/*
+ *  Variables
+ */
+$addThat_defaultBgColor: #ffffff;
+$addThat_defaultBgColorHover: #000000;
+$addThat_defaultIconColor: $addThat_defaultBgColorHover;
+$addThat_defaultIconColorHover: $addThat_defaultBgColor;
+$addThat_facebook: #1877F2;
+$addThat_twitter: #1DA1F2;
+$addThat_pinterest: #BD081C;
+$addThat_linkedin: #0A66C2;
+$breakpoints: (
+  'medium':  ( min-width: 992px )
+) !default;
+
+/*
+ *  Mixins
+ */
+@mixin addThat_rwdFrom($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media #{inspect(map-get($breakpoints, $breakpoint))} {
+            @content;
+        }
+    }
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+            + "Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+}
+
+/*
+ *  Screen
+ */
+.addthat {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2000;
+    @include addThat_rwdFrom('medium') {
+        bottom: auto;
+        right: auto;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__list {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+        justify-content: space-around;
+        @include addThat_rwdFrom('medium') {
+            display: block;
+            width: auto;
+        }
+    }
+
+    &__listitem {
+        display: flex;
+        height: pxToRem(50);
+        flex: 1 0 auto;
+        @include addThat_rwdFrom('medium') {
+            display: block;
+            width: pxToRem(50);
+        }
+    }
+
+    &__link {
+        background: $addThat_defaultBgColor;
+        display: flex;
+        flex: 1 0 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+        &:hover,
+        &:focus {
+            background: $addThat_defaultBgColorHover;
+
+            .addthat__icon-path {
+                fill: $addThat_defaultIconColorHover;
+            }
+        }
+    }
+
+    &__icon {
+        pointer-events: none;
+    }
+
+    &__icon-path {
+        fill: $addThat_defaultIconColor;
+        transition: all .5s ease;
+    }
+}
+
+/*
+ *  Themes
+ */
+.addthat--default-theme {
+    .addthat {
+        &__icon-path { fill: $addThat_defaultBgColor; }
+        &__link:hover,
+        &__link:focus {
+            background: $addThat_defaultBgColor;
+            .addthat__icon-path--facebook { fill: $addThat_facebook; }
+            .addthat__icon-path--twitter { fill: $addThat_twitter; }
+            .addthat__icon-path--pinterest { fill: $addThat_pinterest; }
+            .addthat__icon-path--linkedin { fill: $addThat_linkedin; }
+        }
+        &__link--facebook { background: $addThat_facebook; }
+        &__link--twitter { background: $addThat_twitter; }
+        &__link--pinterest { background: $addThat_pinterest; }
+        &__link--linkedin { background: $addThat_linkedin; }
+    }
+}
+
+/*
+ *  Print
+ */
+@media print {
+    .addthat {
+        display: none !important;
+    }
+}
