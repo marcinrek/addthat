@@ -1,0 +1,125 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>AddThat demo</title>
+    <meta name="description" content="AddThat description from meta description">
+    <meta name="author" content="AddThat">
+    <meta property="og:title" content="AddThat demo from og title" />
+    <meta property="og:description" content="AddThat description from meta og description" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://htmlpreview.github.io/?https://github.com/marcinrek/addthat/blob/master/demo.html" />
+    <meta property="og:image" content="https://loremflickr.com/640/360" />
+
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+  <style>
+       .addthat {position: fixed;left: 0;bottom: 0;right: 0;z-index: 2000;}@media (min-width: 992px) {.addthat {bottom: auto;right: auto;top: 50%;transform: translateY(-50%);}}.addthat__list {display: flex;padding: 0;margin: 0;list-style: none;width: 100%;justify-content: space-around;}@media (min-width: 992px) {.addthat__list {display: block;width: auto;}}.addthat__listitem {display: flex;height: 3.125rem;flex: 1 0 auto;}@media (min-width: 992px) {.addthat__listitem {display: block;width: 3.125rem;}}.addthat__link {background: #ffffff;display: flex;flex: 1 0 100%;height: 100%;align-items: center;justify-content: center;}.addthat__link:hover, .addthat__link:focus {background: #000000;}.addthat__link:hover .addthat__icon-path, .addthat__link:focus .addthat__icon-path {fill: #ffffff;}.addthat__icon {pointer-events: none;}.addthat__icon-path {fill: #000000;transition: all .5s ease;}.addthat--default-theme .addthat__icon-path {fill: #ffffff;}.addthat--default-theme .addthat__link:hover, .addthat--default-theme .addthat__link:focus {background: #ffffff;}.addthat--default-theme .addthat__link:hover .addthat__icon-path--facebook, .addthat--default-theme .addthat__link:focus .addthat__icon-path--facebook {fill: #1877F2;}.addthat--default-theme .addthat__link:hover .addthat__icon-path--twitter, .addthat--default-theme .addthat__link:focus .addthat__icon-path--twitter {fill: #1DA1F2;}.addthat--default-theme .addthat__link:hover .addthat__icon-path--pinterest, .addthat--default-theme .addthat__link:focus .addthat__icon-path--pinterest {fill: #BD081C;}.addthat--default-theme .addthat__link:hover .addthat__icon-path--linkedin, .addthat--default-theme .addthat__link:focus .addthat__icon-path--linkedin {fill: #0A66C2;}.addthat--default-theme .addthat__link--facebook {background: #1877F2;}.addthat--default-theme .addthat__link--twitter {background: #1DA1F2;}.addthat--default-theme .addthat__link--pinterest {background: #BD081C;}.addthat--default-theme .addthat__link--linkedin {background: #0A66C2;}@media print {.addthat {display: none !important;}}
+  </style>
+</head>
+
+<body>
+
+    <div class="container" id="top">
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow container">
+            <h1 class="h5 my-0 mr-md-auto font-weight-normal">Home</h1>
+            <nav class="my-2 my-md-0 mr-md-3">
+                <a class="p-2 text-dark" href="/">Home</a>
+                <a class="p-2 text-dark" href="/">About</a>
+                <a class="p-2 text-dark" href="/">News</a>
+                <a class="p-2 text-dark" href="/">Contact</a>
+            </nav>
+        </div>
+
+        <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+            <div class="col-md-6 px-0">
+                <h2 class="display-4 font-italic">This is a test site for AddThat</h2>
+                <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus error, voluptatibus sequi reiciendis alias nostrum illum neque cum nam veritatis sit magni eius beatae possimus esse voluptatum voluptas, atque in.</p>
+                <p class="lead mb-0"><a href="/" class="text-white font-weight-bold">Continue reading...</a></p>
+            </div>
+        </div>
+
+        <div class="card-deck">
+            <div class="card">
+                <img src="http://via.placeholder.com/640x360" class="card-img-top" alt="Img alt">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="/">News 01</a></h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae obcaecati eaque veniam porro recusandae, quaerat nisi, qui, dolorem reprehenderit corrupti maiores enim tenetur perferendis laudantium natus. Rem totam excepturi optio?</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="http://via.placeholder.com/640x360" class="card-img-top" alt="Img alt">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="/">News 02</a></h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores a neque excepturi odio. Alias rerum aperiam explicabo, doloremque perspiciatis, dolorem natus velit molestias repellendus, quaerat autem porro eos! Iusto, mollitia.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 6 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="http://via.placeholder.com/640x360" class="card-img-top" alt="Img alt">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="/">News 404</a></h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deserunt et voluptate ad natus. Modi tempora nostrum ab dolorem tenetur nam quae. Temporibus voluptate expedita voluptatibus omnis quod quaerat voluptas?</p>
+                    <p class="card-text"><small class="text-muted">Last updated 12 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+        <aside class="addthat addthat--default-theme addthat--js" data-minwidth="320" data-widthfactor="0.5" data-minheight="480" data-heightfactor="0.9">
+            <h3 class="sr-only">Share this page</h3>
+            <ol class="addthat__list">
+                <li class="addthat__listitem">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhtmlpreview.github.io%2F%3Fhttps%3A%2F%2Fgithub.com%2Fmarcinrek%2Faddthat%2Fblob%2Fmaster%2Fdemo.html" class="addthat__link addthat__link--js addthat__link--facebook" data-action="Facebook">
+                        <span class="sr-only">Facebook</span>
+                        <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="addthat__icon addthat__icon--facebook" width="24px" height="24px">
+                            <path class="addthat__icon-path addthat__icon-path--facebook" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="addthat__listitem">
+                    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fhtmlpreview.github.io%2F%3Fhttps%3A%2F%2Fgithub.com%2Fmarcinrek%2Faddthat%2Fblob%2Fmaster%2Fdemo.html" class="addthat__link addthat__link--js addthat__link--twitter" data-action="Twitter">
+                        <span class="sr-only">Twitter</span>
+                        <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="addthat__icon addthat__icon--twitter" width="24px" height="24px">
+                            <path class="addthat__icon-path addthat__icon-path--twitter" d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="addthat__listitem">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fhtmlpreview.github.io%2F%3Fhttps%3A%2F%2Fgithub.com%2Fmarcinrek%2Faddthat%2Fblob%2Fmaster%2Fdemo.html" class="addthat__link addthat__link--js addthat__link--linkedin" data-action="LinkedIn">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="addthat__icon addthat__icon--linkedin" width="24px" height="24px">
+                            <path class="addthat__icon-path addthat__icon-path--linkedin" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="addthat__listitem">
+                    <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fhtmlpreview.github.io%2F%3Fhttps%3A%2F%2Fgithub.com%2Fmarcinrek%2Faddthat%2Fblob%2Fmaster%2Fdemo.html" class="addthat__link addthat__link--js addthat__link--pinterest" data-action="Pinterest">
+                        <span class="sr-only">Pinterest</span>
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="addthat__icon addthat__icon--pinterest" width="24px" height="24px">
+                            <path class="addthat__icon-path addthat__icon-path--pinterest" d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ol>
+        </aside>
+        
+
+        <footer class="container py-3 border-top mt-3">
+            <p class="float-right"><a href="#top">Back to top</a></p>
+            <p>© 2021</p>
+        </footer>
+
+        <script>
+            "use strict";function _toConsumableArray(t){if(Array.isArray(t)){for(var e=0,n=Array(t.length);e<t.length;e++)n[e]=t[e];return n}return Array.from(t)}!function(){var t=document.querySelector(".addthat--js");if(t){var e=document.querySelectorAll(".addthat__link--js"),n=parseFloat(t.dataset.widthfactor,10),o=parseFloat(t.dataset.heightfactor,10),a=parseInt(t.dataset.minwidth,10),r=parseInt(t.dataset.minheight,10),i=t.hasAttribute("data-gaevent"),l=t.hasAttribute("data-debug");[].concat(_toConsumableArray(e)).forEach(function(t){t.addEventListener("click",function(t){t.preventDefault();var e,c,s=Math.round(window.innerWidth*n)<a?a:Math.round(window.innerWidth*n),d=Math.round(window.innerHeight*o)<r?r:Math.round(window.innerHeight*o);!function(t,e,n){window.open(t,"Share","directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width="+e+",height="+n),l&&(console.log("Open share window"),console.log("windowHref",t),console.log("width",e),console.log("height",n))}(t.target.href,s,d),i&&(e=t.target.dataset.action,c=window.location.href,gtag("event",e,{event_category:"Share",event_label:c,non_interaction:!1,event_callback:function(){l&&(console.log("Google analytics event send"),console.log("action",e),console.log("event_category","Share"),console.log("event_label",c),console.log("non_interaction",!1))}}))},!1)})}}();
+        </script>
+
+    </div>
+
+</body>
+</html>
