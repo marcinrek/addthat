@@ -18,9 +18,7 @@
     rel="stylesheet" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
     crossorigin="anonymous">
-  <style>
-       .addthat {position: fixed;left: 0;bottom: 0;right: 0;z-index: 2000;}@media (min-width: 992px) {.addthat {bottom: auto;right: auto;top: 50%;transform: translateY(-50%);}}.addthat__list {display: flex;padding: 0;margin: 0;list-style: none;width: 100%;justify-content: space-around;}@media (min-width: 992px) {.addthat__list {display: block;width: auto;}}.addthat__listitem {display: flex;height: 3.125rem;flex: 1 0 auto;}@media (min-width: 992px) {.addthat__listitem {display: block;width: 3.125rem;}}.addthat__link {background: #ffffff;display: flex;flex: 1 0 100%;height: 100%;align-items: center;justify-content: center;}.addthat__link:hover, .addthat__link:focus {background: #000000;}.addthat__link:hover .addthat__icon-path, .addthat__link:focus .addthat__icon-path {fill: #ffffff;}.addthat__icon {pointer-events: none;}.addthat__icon-path {fill: #000000;transition: all .5s ease;}.addthat--default-theme .addthat__icon-path {fill: #ffffff;}.addthat--default-theme .addthat__link:hover, .addthat--default-theme .addthat__link:focus {background: #ffffff;}.addthat--default-theme .addthat__link:hover .addthat__icon-path--facebook, .addthat--default-theme .addthat__link:focus .addthat__icon-path--facebook {fill: #1877F2;}.addthat--default-theme .addthat__link:hover .addthat__icon-path--twitter, .addthat--default-theme .addthat__link:focus .addthat__icon-path--twitter {fill: #1DA1F2;}.addthat--default-theme .addthat__link:hover .addthat__icon-path--pinterest, .addthat--default-theme .addthat__link:focus .addthat__icon-path--pinterest {fill: #BD081C;}.addthat--default-theme .addthat__link:hover .addthat__icon-path--linkedin, .addthat--default-theme .addthat__link:focus .addthat__icon-path--linkedin {fill: #0A66C2;}.addthat--default-theme .addthat__link--facebook {background: #1877F2;}.addthat--default-theme .addthat__link--twitter {background: #1DA1F2;}.addthat--default-theme .addthat__link--pinterest {background: #BD081C;}.addthat--default-theme .addthat__link--linkedin {background: #0A66C2;}@media print {.addthat {display: none !important;}}
-  </style>
+  <link href="https://marcinrek.github.io/addthat/css/addthat.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -115,9 +113,7 @@
             <p>© 2021</p>
         </footer>
 
-        <script>
-            "use strict";function _toConsumableArray(t){if(Array.isArray(t)){for(var e=0,n=Array(t.length);e<t.length;e++)n[e]=t[e];return n}return Array.from(t)}!function(){var t=document.querySelector(".addthat--js");if(t){var e=document.querySelectorAll(".addthat__link--js"),n=parseFloat(t.dataset.widthfactor,10),o=parseFloat(t.dataset.heightfactor,10),a=parseInt(t.dataset.minwidth,10),r=parseInt(t.dataset.minheight,10),i=t.hasAttribute("data-gaevent"),l=t.hasAttribute("data-debug");[].concat(_toConsumableArray(e)).forEach(function(t){t.addEventListener("click",function(t){t.preventDefault();var e,c,s=Math.round(window.innerWidth*n)<a?a:Math.round(window.innerWidth*n),d=Math.round(window.innerHeight*o)<r?r:Math.round(window.innerHeight*o);!function(t,e,n){window.open(t,"Share","directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width="+e+",height="+n),l&&(console.log("Open share window"),console.log("windowHref",t),console.log("width",e),console.log("height",n))}(t.target.href,s,d),i&&(e=t.target.dataset.action,c=window.location.href,gtag("event",e,{event_category:"Share",event_label:c,non_interaction:!1,event_callback:function(){l&&(console.log("Google analytics event send"),console.log("action",e),console.log("event_category","Share"),console.log("event_label",c),console.log("non_interaction",!1))}}))},!1)})}}();
-        </script>
+        <script src="https://marcinrek.github.io/addthat/css/addthat.min.css"></script>
 
     </div>
 
