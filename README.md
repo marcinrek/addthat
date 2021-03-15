@@ -6,6 +6,8 @@ Simple share widget for adding share links.
 * Works with and without JS - without JS it will act as a link, with JS will open share link in window
 * Sends event to google analytics on share button click - requires using gtag.js
 
+## Demo
+Demo can be found here: https://htmlpreview.github.io/?https://github.com/marcinrek/addthat/blob/master/demo.html
 
 ## Configuration
 * embed HTML markup from addthat.html to your page and replace {PAGEURL} with a proper URL
