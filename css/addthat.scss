@@ -1,6 +1,7 @@
 /*
  *  Variables
  */
+$addThat_base-font-pixel: 16; 
 $addThat_defaultBgColor: #ffffff;
 $addThat_defaultBgColorHover: #000000;
 $addThat_defaultIconColor: $addThat_defaultBgColorHover;
@@ -26,6 +27,10 @@ $breakpoints: (
         @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
             + "Available breakpoints are: #{map-keys($breakpoints)}.";
     }
+}
+
+@function addThat_pxToRem($pixel) {
+    @return $pixel/$addThat_base-font-pixel + rem;
 }
 
 /*
@@ -59,11 +64,11 @@ $breakpoints: (
 
     &__listitem {
         display: flex;
-        height: pxToRem(50);
+        height: addThat_pxToRem(50);
         flex: 1 0 auto;
         @include addThat_rwdFrom('medium') {
             display: block;
-            width: pxToRem(50);
+            width: addThat_pxToRem(50);
         }
     }
 
