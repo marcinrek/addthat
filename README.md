@@ -24,6 +24,6 @@ Demo can be found here: https://marcinrek.github.io/addthat/
 | ```data-heightfactor```          | ```float```  | Current window height will be multiplied by this factor and used as Share window height |
 
 ## Donate 
-If you found this piece of code useful in anyway please consider a donation :)
+If you find this piece of code to be useful, please consider a donation :)
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate?hosted_button_id=ZPSPDRNU99V4Y)
